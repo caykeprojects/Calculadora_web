@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: radial-gradient(circle at top, #3a3a3a, #121212, #000000);
+
+}
+
+.sessao-calculadora {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Titulo_nome {
+    color: beige;
+    display: flex;
+}
+
+.container-calcuadora {
+    display: flex;
+    width: 17%;
+    height: 50%;
+    background: linear-gradient(135deg, #0a1f44, #123b7a, #1e5bb8, #3b82f6);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.Barra-de-calculo {
+    width: 81%;
+    height: 10%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: right;
+    font-size: 20px;    
+}
+
+.Barra-de-calculo::placeholder{
+    font-size: 20px;
+    
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(5, 1fr) ;
+    gap: 23px;
+
+}
+
+button{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #b9b8b8;
+    cursor: pointer;
+    transform: .4s;
+}
+
+
+.btn-igual{
+
+    grid-row: 4/6;
+    height: 100%;
+    grid-column: 4;
+}
