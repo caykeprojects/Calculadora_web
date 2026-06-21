@@ -1,73 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset básico para evitar diferenças entre navegadores */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 
+/* Fundo com gradiente radial para destacar a calculadora */
 body {
     background: radial-gradient(circle at top, #3a3a3a, #121212, #000000);
+    min-height: 100vh;
 
 }
 
+/* Centralização da calculadora na tela */
 .sessao-calculadora {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 24px;
 }
 
+/* Nome exibido no topo da página */
 .Titulo_nome {
     color: beige;
     display: flex;
 }
 
+/* Painel principal da calculadora */
 .container-calcuadora {
     display: flex;
-    width: 17%;
-    height: 50%;
+    width: min(92vw, 360px);
+    min-height: 520px;
+    padding: 20px;
     background: linear-gradient(135deg, #0a1f44, #123b7a, #1e5bb8, #3b82f6);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
 
 }
 
+/* Campo de exibição da expressão */
 .Barra-de-calculo {
-    width: 81%;
-    height: 10%;
-    margin-top: 20px;
+    width: 100%;
+    height: 64px;
     border-radius: 10px;
     border: none;
     text-align: right;
-    font-size: 20px;    
+    font-size: 25px;    
 }
 
+/* Espaço reservado para o texto do input */
 .Barra-de-calculo::placeholder{
     font-size: 20px;
     
 }
 
+/* Grade dos botões */
 .numeros {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows:repeat(5, 1fr) ;
-    gap: 23px;
+    gap: 14px;
+    width: 100%;
 
 }
 
+/* Estilo base dos botões */
 button{
     border: none;
-    height: 50px;
-    width: 50px;
+    height: clamp(48px, 10vw, 58px);
+    width: 100%;
     border-radius: 10px;
     font-size: 20px;
 }
 
+/* Feedback visual ao passar o mouse */
 button:hover{
     background-color: #b9b8b8;
     cursor: pointer;
@@ -75,6 +90,7 @@ button:hover{
 }
 
 
+/* Botão de igual ocupa mais espaço na grade */
 .btn-igual{
 
     grid-row: 4/6;

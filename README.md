@@ -1,33 +1,35 @@
-# Calculadora
+# Calculadora Web
 
-Projeto de uma calculadora simples feita com HTML e CSS.
+Calculadora web desenvolvida com HTML, CSS e JavaScript puro. O projeto oferece uma interface simples, responsiva e organizada para simular uma calculadora no navegador.
 
-## Descrição
+## Funcionalidades
 
-A interface possui um campo de exibição e uma grade de botões com os números, operadores básicos e ações como limpar, apagar e calcular.
-
-O visual foi pensado com um fundo em gradiente e um painel centralizado para simular uma calculadora física.
+- Campo de exibição para entrada dos valores
+- Botões para números e operações básicas
+- Ações para limpar, apagar e calcular
+- Layout centralizado com visual em gradiente
 
 ## Tecnologias
 
 - HTML
 - CSS
+- JavaScript
 
 ## Estrutura do projeto
 
 - `index.html`: estrutura da interface
-- `style.css`: estilos da calculadora
-- `index.js`: arquivo reservado para a lógica da calculadora
+- `style.css`: estilização da calculadora
+- `index.js`: lógica dos botões e das ações
 
 ## Como executar
 
-1. Abra a pasta do projeto no VS Code ou em qualquer editor.
+1. Abra a pasta do projeto no VS Code ou em outro editor.
 2. Abra o arquivo `index.html` no navegador.
-3. Se preferir, use a extensão Live Server para visualizar em tempo real.
+3. Se preferir, use a extensão Live Server para facilitar a visualização.
 
 ## Observação
 
-Neste momento, o projeto está focado na interface visual. O arquivo `index.js` ainda não contém a lógica dos cálculos.
+O projeto está em evolução e pode receber melhorias na lógica, validação de entrada e usabilidade.
 
 ## Autor
 
